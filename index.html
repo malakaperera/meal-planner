@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Meal Planner</title>
+    <link rel="stylesheet" href="scss/style.css">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@300;400;700&family=Roboto:wght@300;400;700&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+    <main>
+
+        <form action='./recipes.html' target="_blank">
+            <section class="step step-1 active">
+                <h1>Meal Planner</h1>
+                <button type="button" class="next-button">Get Started</button>
+            </section>
+
+            <section class="step step-2">
+                <h1>What's in your Pantry?</h1>
+
+                <ul class="form-checkboxes">
+                    <li>
+                        <input type="checkbox" name="pantry-item" id="pantry-item-1" value="Oilve oil">
+                        <label for="pantry-item-1">Oilve oil</label>
+                    </li>
+                    <li>
+                        <input type="checkbox" name="pantry-item" id="pantry-item-2" value="Butter">
+                        <label for="pantry-item-2">Butter</label>
+                    </li>
+                    <li>
+                        <input type="checkbox" name="pantry-item" id="pantry-item-3" value="Eggs">
+                        <label for="pantry-item-3">Eggs</label>
+                    </li>
+                    <li>
+                        <input type="checkbox" name="pantry-item" id="pantry-item-4" value="Rice">
+                        <label for="pantry-item-4">Rice</label>
+                    </li>
+                    <li>
+                        <input type="checkbox" name="pantry-item" id="pantry-item-5" value="Pasta">
+                        <label for="pantry-item-5">Pasta</label>
+                    </li>
+                </ul>
+                <button type="button" class="previous-button">Previous</button>
+                <button type="button" class="next-button">Next</button>
+            </section>
+
+
+            <section class="step step-3">
+                <h1>Got any Allergies?</h1>
+                <ul class="form-checkboxes">
+                    <li>
+                        <input type="checkbox" name="allergy-item" id="allergy-item-1" value="Alchol">
+                        <label for="allergy-item-1">Alchol</label>
+                    </li>
+                    <li>
+                        <input type="checkbox" name="allergy-item" id="allergy-item-2" value="Dairy">
+                        <label for="allergy-item-2">Dairy</label>
+                    </li>
+                    <li>
+                        <input type="checkbox" name="allergy-item" id="allergy-item-3" value="Egg">
+                        <label for="allergy-item-3">Egg</label>
+                    </li>
+                    <li>
+                        <input type="checkbox" name="allergy-item" id="allergy-item-4" value="Fish">
+                        <label for="allergy-item-4">Fish</label>
+                    </li>
+                    <li>
+                        <input type="checkbox" name="allergy-item" id="allergy-item-5" value="Gluten">
+                        <label for="allergy-item-5">Gluten</label>
+                    </li>
+                </ul>
+
+                <button type="button" class="previous-button">Previous</button>
+                <button type="button" class="next-button">Next</button>
+            </section>
+
+
+            <section class="step step-3">
+                <h1>Your Likings?</h1>
+
+                <ul class="form-checkboxes">
+                    <li>
+                        <input type="checkbox" name="diet-item" id="diet-item-1" value="Vegetarian">
+                        <label for="diet-item-1">Vegetarian</label>
+                    </li>
+                    <li>
+                        <input type="checkbox" name="diet-item" id="diet-item-2" value="Vegan">
+                        <label for="diet-item-2">Vegan</label>
+                    </li>
+                    <li>
+                        <input type="checkbox" name="diet-item" id="diet-item-3" value="Low Fat">
+                        <label for="diet-item-3">Low Fat</label>
+                    </li>
+                    <li>
+                        <input type="checkbox" name="diet-item" id="diet-item-4" value="Low Carb">
+                        <label for="diet-item-4">Low Carb</label>
+                    </li>
+                    <li>
+                        <input type="checkbox" name="diet-item" id="diet-item-5" value="Paleo">
+                        <label for="diet-item-5">Paleo</label>
+                    </li>
+                </ul>
+
+                <button type="button" class="previous-button">Previous</button>
+                <button type="submit" class="next-button">Plan Meals</button>
+            </section>
+        </form>
+
+        <!--  <footer>Made by Malaka Perera with a ⌨️ </footer> -->
+    </main>
+
+    <script src="js/index.js"></script>
+</body>
+
+</html>
