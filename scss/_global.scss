@@ -13,13 +13,47 @@ body {
     height: 100%;
     max-width: 50em;
     display: flex;
-    flex-direction: column;
     margin: 0 auto;
-    line-height: 1.5;
+    font-size: 100%;
+    // flex-direction: column;
+     
+    // line-height: 1.5;
     
 }
 
-main {
-    //background-color: gray;
-    margin: auto;
+h1, h2, h3, h4, h5, h6 {
+    margin: 48px 0 16px;
+    font-family: $RobotoPrimary;
 }
+
+main {
+    margin: auto;
+    text-align: center;
+}
+
+
+button {
+    height: 36px;
+    min-width: 64px;
+    padding: 0 16px;
+    text-align: center;
+    border: 2px solid transparent;
+    //border: none;
+    border-radius: 4px;
+    background-color: green;
+    color: white;
+    font-size: 14px;
+    font-family: $RobotoSecondary;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: .2em;
+
+    
+}
+
+button:hover {
+    background-color: transparent;
+    border: 2px solid green;
+    color: green;
+}
+

@@ -6,39 +6,189 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Meal Planner</title>
     <link rel="stylesheet" href="scss/style.css">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@300;400;700&family=Roboto:wght@300;400;700&display=swap"
+        rel="stylesheet">
 </head>
 
 <body>
     <main>
-        
-        <form id="allergies-form">
-            <h1>Meal Planner</h1>
 
-            <button type="submit">Get Started</button>
+        <form>
+            <section class="step step-1 active">
+                <h1>Meal Planner</h1>
+                <button type="button" class="next-button">Get Started</button>
+            </section>
+
+            <section class="step step-2">
+                <h1>What's in your Pantry?</h1>
+
+
+                <ul class="form-checkboxes">
+                    <li>
+                        <input type="checkbox" name="pantry-item" id="pantry-item-1" value="Oilve oil">
+                        <label for="pantry-item-1">Oilve oil</label>
+                    </li>
+                    <li>
+                        <input type="checkbox" name="pantry-item" id="pantry-item-2" value="Butter">
+                        <label for="pantry-item-2">Butter</label>
+                    </li>
+                    <li>
+                        <input type="checkbox" name="pantry-item" id="pantry-item-3" value="Eggs">
+                        <label for="pantry-item-3">Eggs</label>
+                    </li>
+                    <li>
+                        <input type="checkbox" name="pantry-item" id="pantry-item-4" value="Rice">
+                        <label for="pantry-item-4">Rice</label>
+                    </li>
+                    <li>
+                        <input type="checkbox" name="pantry-item" id="pantry-item-5" value="Pasta">
+                        <label for="pantry-item-5">Pasta</label>
+                    </li>
+                </ul>
+
+
+
+                <button type="button" class="previous-button">Previous</button>
+                <button type="button" class="next-button">Next</button>
+            </section>
+
+            <section class="step step-3">
+                <h1>Got any Allergies?</h1>
+                <ul class="form-checkboxes">
+                    <li>
+                        <input type="checkbox" name="allergy-item" id="allergy-item-1" value="Alchol">
+                        <label for="allergy-item-1">Alchol</label>
+                    </li>
+                    <li>
+                        <input type="checkbox" name="allergy-item" id="allergy-item-2" value="Dairy">
+                        <label for="allergy-item-2">Dairy</label>
+                    </li>
+                    <li>
+                        <input type="checkbox" name="allergy-item" id="allergy-item-3" value="Egg">
+                        <label for="allergy-item-3">Egg</label>
+                    </li>
+                    <li>
+                        <input type="checkbox" name="allergy-item" id="allergy-item-4" value="Fish">
+                        <label for="allergy-item-4">Fish</label>
+                    </li>
+                    <li>
+                        <input type="checkbox" name="allergy-item" id="allergy-item-5" value="Gluten">
+                        <label for="allergy-item-5">Gluten</label>
+                    </li>
+                </ul>
+
+                <button type="button" class="previous-button">Previous</button>
+                <button type="button" class="next-button">Next</button>
+            </section>
+
+            <section class="step step-3">
+                <h1>Your Likings?</h1>
+
+                <ul class="form-checkboxes">
+                    <li>
+                        <input type="checkbox" name="diet-item" id="diet-item-1" value="Vegetarian">
+                        <label for="diet-item-1">Vegetarian</label>
+                    </li>
+                    <li>
+                        <input type="checkbox" name="diet-item" id="diet-item-2" value="Vegan">
+                        <label for="diet-item-2">Vegan</label>
+                    </li>
+                    <li>
+                        <input type="checkbox" name="diet-item" id="diet-item-3" value="Low Fat">
+                        <label for="diet-item-3">Low Fat</label>
+                    </li>
+                    <li>
+                        <input type="checkbox" name="diet-item" id="diet-item-4" value="Low Carb">
+                        <label for="diet-item-4">Low Carb</label>
+                    </li>
+                    <li>
+                        <input type="checkbox" name="diet-item" id="diet-item-5" value="Paleo">
+                        <label for="diet-item-5">Paleo</label>
+                    </li>
+                </ul>
+
+                <button type="button" class="previous-button">Previous</button>
+                <button type="submit" class="next-button">Plan Meals</button>
+            </section>
         </form>
 
-        <form id="pantry-items-form">
+        <!--         <section>
+            <div class="container">
+              <form>
+          
+                <div class="step step-1 active">
+                  <div class="form-group">
+                    <label for="firstName">First Name</label>
+                    <input type="text" id="firstName" name="first-name">
+                  </div>
+                  <div class="form-group">
+                    <label for="lastName">Last Name</label>
+                    <input type="text" id="lastName" name="last-name">
+                  </div>
+                  <div class="form-group">
+                    <label for="nickName">Nick Name</label>
+                    <input type="text" id="nickName" name="nick-name">
+                  </div>
+                  <button type="button" class="next-btn">Next</button>
+                </div>
+          
+                <div class="step step-2">
+                  <div class="form-group">
+                    <label for="email">Email</label>
+                    <input type="text" id="email" name="email">
+                  </div>
+                  <div class="form-group">
+                    <label for="phone">Phone</label>
+                    <input type="number" id="phone" name="phone-number">
+                  </div>
+                  <button type="button" class="previous-btn">Previous</button>
+                  <button type="button" class="next-btn">Next</button>
+                </div>
+          
+                <div class="step step-3">
+                  <div class="form-group">
+                    <label for="country">country</label>
+                    <input type="text" id="country" name="country">
+                  </div>
+                  <div class="form-group">
+                    <label for="city">City</label>
+                    <input type="text" id="city" name="city">
+                  </div>
+                  <div class="form-group">
+                    <label for="postCode">Post Code</label>
+                    <input type="text" id="postCode" name="post-code">
+                  </div>
+                  <button type="button" class="previous-btn">Previous</button>
+                  <button type="submit" class="submit-btn">Submit</button>
+                </div>
+          
+              </form>
+            </div>
+          </section> -->
+
+        <!--         <form>
             <h1>What's in your Pantry?</h1>
             <ul class="checkbox-group">
-                <li><input type="checkbox" name="pantry-item" id="pantry-item-1" value="Butter">
+                <li><input class="input" type="checkbox" name="pantry-item" id="pantry-item-1" value="Butter">
                     <label for="pantry-item-1">Butter</label></li>
 
-                <li><input type="checkbox" name="pantry-item" id="pantry-item-2" value="Oilve oi">
+                <li><input class="input" type="checkbox" name="pantry-item" id="pantry-item-2" value="Oilve oi">
                     <label for="pantry-item-2">Oilve oil</label></li>
 
-                <li><input type="checkbox" name="pantry-item" id="pantry-item-3" value="Vegetable oil">
+                <li><input class="input" type="checkbox" name="pantry-item" id="pantry-item-3" value="Vegetable oil">
                     <label for="pantry-item-3">Vegetable oil</label></li>
 
-                <li><input type="checkbox" name="pantry-item" id="pantry-item-4" value="eggs">
+                <li><input class="input" type="checkbox" name="pantry-item" id="pantry-item-4" value="eggs">
                     <label for="pantry-item-4">Eggs</label></li>
 
-                <li><input type="checkbox" name="pantry-item" id="pantry-item-5" value="Milk">
+                <li><input class="input" type="checkbox" name="pantry-item" id="pantry-item-5" value="Milk">
                     <label for="pantry-item-5">Milk</label></li>
 
-                <li><input type="checkbox" name="pantry-item" id="pantry-item-6" value="Pasta">
+                <li><input class="input" type="checkbox" name="pantry-item" id="pantry-item-6" value="Pasta">
                     <label for="pantry-item-6">Pasta</label></li>
 
-                <li> <input type="checkbox" name="pantry-item" id="pantry-item-7" value="Rice">
+                <li> <input class="input" type="checkbox" name="pantry-item" id="pantry-item-7" value="Rice">
                     <label for="pantry-item-7">Rice</label></li>
             </ul>
 
@@ -47,10 +197,10 @@
         </form>
 
 
-        <form id="allergies-form">
+        <form>
             <h1>Got any Allergies?</h1>
             <ul class="checkbox-group">
-                <li><input type="checkbox" name="pantry-item" id="pantry-item-1" value="Butter">
+                <li><input class="input" type="checkbox" name="pantry-item" id="pantry-item-1" value="Butter">
                     <label for="pantry-item-1">Butter</label></li>
             </ul>
 
@@ -59,10 +209,10 @@
         </form>
 
 
-        <form id="allergies-form">
+        <form>
             <h1>Your Likings?</h1>
             <ul class="checkbox-group">
-                <li><input type="checkbox" name="pantry-item" id="pantry-item-1" value="Butter">
+                <li><input class="input" type="checkbox" name="pantry-item" id="pantry-item-1" value="Butter">
                     <label for="pantry-item-1">Butter</label></li>
             </ul>
 
@@ -70,7 +220,7 @@
             <button type="submit">Next</button>
         </form>
 
-
+ -->
 
         <!--  <footer>Made by Malaka Perera with a ⌨️ </footer> -->
     </main>

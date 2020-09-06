@@ -3,5 +3,14 @@
     src: url('/fonts/Metropolis-Regular.woff') format('woff');
 }
 
+$RobotoPrimary: 'Roboto Slab', serif;
+$RobotoSecondary: 'Roboto', sans-serif;
+
 $primaryFont: 'Metropolis', sans-serif;
-$secondaryFont: 'Open Sans', sans-serif;
+
+
+// $typography-styles-button: (
+//   font-family: $RobotoPrimary,
+//   font-size: 14px,
+//   letter-spacing: 1.25px
+// );

@@ -1,0 +1,27 @@
+.step {
+  display: none;
+
+  .active {
+      display: block;
+  }
+
+  .form-checkboxes {
+      li {
+          display: inline-flex;
+          list-style: none;
+          padding: 16px 8px;
+      }
+      input[type=checkbox] {
+          margin: 0px 8px;
+      }
+  }
+
+  h1 {
+      font-size: 3em;
+  }
+
+
+}
+.step.active {
+  display: block;
+}
