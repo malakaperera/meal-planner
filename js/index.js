@@ -44,7 +44,10 @@ form.addEventListener('submit', (e) => {
   console.log('Allergy Items ', allergies);
   console.log('Diet Items ', preferedDiets);
   form.reset();
-  console.log("Go to Home.html");
+
+  console.log("Go to Recipes.html");
+  window.open("./recipes.html");
+  
 });
 
 function changeStep(button) {
