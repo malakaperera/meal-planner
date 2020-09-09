@@ -1,0 +1,18 @@
+header {
+  margin: 0 auto;
+  border: 2px solid black;
+
+  .nav-bar {
+    height: 4rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+/*     background-color: blue; */
+
+    .nav-bar-links li {
+      display: inline;
+      margin: 0.5rem;
+      padding: 0.75rem;
+    }
+  }
+}

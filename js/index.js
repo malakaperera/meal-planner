@@ -5,10 +5,6 @@ const form = document.querySelector("form");
 const nextButton = document.querySelectorAll("form .next-button");
 const previousButton = document.querySelectorAll("form .previous-button");
 
-export function some() {
-  return 5;
-}
-
 //Functions
 function changeStep(button) {
   let index = 0;
@@ -73,7 +69,7 @@ function getUserDiets() {
   return userDiets;
 }
 
-export function getUserPreferences(event) {
+function getUserPreferences(event) {
   event.preventDefault();
 
   const preferences = {
@@ -113,6 +109,7 @@ document.addEventListener("DOMContentLoaded", () => {
     });
   });
   
+  if (form)
   form.addEventListener('submit', getUserPreferences);
   //console.log('Print: ', getUserPreferences());
 });

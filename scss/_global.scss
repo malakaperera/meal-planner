@@ -1,36 +1,18 @@
  * {
      margin: 0;
      padding: 0;
-     font-family: $primaryFont;
+     font-family: $RobotoSecondary;
  }
  
- html, body {
-    height: 100%;
-} 
-
-
 body {
-    height: 100%;
-    max-width: 50em;
-    display: flex;
+    height: 100vh;
+    max-width: 1280px;
     margin: 0 auto;
-    font-size: 100%;
-    // flex-direction: column;
-     
-    // line-height: 1.5;
-    
 }
 
 h1, h2, h3, h4, h5, h6 {
-    margin: 48px 0 16px;
     font-family: $RobotoPrimary;
 }
-
-main {
-    margin: auto;
-    text-align: center;
-}
-
 
 button {
     height: 36px;
@@ -38,7 +20,6 @@ button {
     padding: 0 16px;
     text-align: center;
     border: 2px solid transparent;
-    //border: none;
     border-radius: 4px;
     background-color: green;
     color: white;
@@ -47,8 +28,6 @@ button {
     font-weight: 700;
     text-transform: uppercase;
     letter-spacing: .2em;
-
-    
 }
 
 button:hover {
@@ -56,4 +35,3 @@ button:hover {
     border: 2px solid green;
     color: green;
 }
-
